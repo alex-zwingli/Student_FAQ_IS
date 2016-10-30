@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Catalog";
+}
+
+<h2>Catalog</h2>
+
+@using (Html.BeginForm("CategoryChosen", "Degree", FormMethod.Get))
+{ 
+    <fieldset>
+        IS Degrees
+        @Html.DropDownList("DegreeNames")
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+    </fieldset>
+}
+
